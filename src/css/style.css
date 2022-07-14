@@ -9,6 +9,10 @@ header {
 nav {
     height: 50px;
     background-color: #212121;
+
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
 .menu {
@@ -38,6 +42,8 @@ nav {
 
     position: absolute;
     width: 100%;
+
+    margin-top: 50px;
 }
 
 .subheader .subheader_logo {
@@ -146,4 +152,80 @@ nav {
     text-transform: uppercase;
     color: #fff;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+}
+
+.reasons {
+    min-height: 767px;
+    padding: 20px 0 64px 0;
+}
+
+.reasons .reasons_pros {
+    width: 115px;
+    height: 27px;
+    background: #000;
+
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.reasons .reasons_header {
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 35px 0 16px 0;
+}
+
+.reasons .reasons_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+    min-height: 151px;
+}
+
+.reasons .reasons_item:last-child {
+    margin-bottom: 0;
+}
+
+.reasons .reasons_img_wrapper {
+    min-width: 116px;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 25px;
+}
+
+.reasons .reasons_text_wrapper {
+    max-width: 372px;
+}
+
+.reasons .reasons_subheader {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
+
+.reasons .reasons_text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+    margin: 0;
 }
