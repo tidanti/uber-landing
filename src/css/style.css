@@ -157,10 +157,10 @@ nav {
 
 .reasons {
     min-height: 767px;
-    padding: 20px 0 64px 0;
+    padding: 20px 0 38px 0;
 }
 
-.reasons .reasons_pros {
+.reasons .label {
     width: 115px;
     height: 27px;
     background: #000;
@@ -178,7 +178,7 @@ nav {
     margin: 0 auto;
 }
 
-.reasons .reasons_header {
+.reasons .title {
     font-weight: 700;
     font-size: 38px;
     text-align: center;
@@ -193,10 +193,6 @@ nav {
     align-items: center;
     margin-bottom: 26px;
     min-height: 151px;
-}
-
-.reasons .reasons_item:last-child {
-    margin-bottom: 0;
 }
 
 .reasons .reasons_img_wrapper {
