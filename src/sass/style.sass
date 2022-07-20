@@ -1,6 +1,11 @@
 $light-blue: #1EACC7
 $light-red: #FF5656
 
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $light-blue
+
 *
   font-family: Roboto, sans-serif
 
@@ -126,6 +131,7 @@ nav
     text-align: center
     color: #fff
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    +btn_hover
 
 .promo
   min-height: 800px
@@ -174,6 +180,7 @@ nav
     text-transform: uppercase
     color: #fff
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    +btn_hover
 
 .reasons
   min-height: 767px
@@ -265,6 +272,27 @@ nav
       bottom: 35px
       left: 50%
       transform: translateX(-50%)
+
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $light-blue
+        transition: 0.3s all
+      &:after
+        content: ''
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $light-blue
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: $light-red
 
 .car
   min-height: 898px
