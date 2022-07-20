@@ -28,10 +28,12 @@ nav
   justify-content: center
   align-items: center
   margin: 0 auto
+  z-index: 2
+  position: relative
 
-.label_light
-  background-color: #FFFFFF
-  color: #070716
+  &_light
+    background-color: #FFFFFF
+    color: #070716
 
 .title
   font-weight: 700
@@ -40,6 +42,8 @@ nav
   text-transform: uppercase
   color: #222222
   margin: 35px 0 16px 0
+  z-index: 2
+  position: relative
 
 .subtitle
   margin-top: 19px
@@ -47,6 +51,8 @@ nav
   font-size: 17px
   text-align: center
   color: #222222
+  z-index: 2
+  position: relative
 
 .text_light
   color: #FFFFFF
@@ -261,38 +267,35 @@ nav
       transform: translateX(-50%)
 
 .car
-  height: 897px
+  min-height: 898px
+  padding: 59px 0 136px 0
+  background: url("../img/bg/mobile_bg.jpg") center center/cover no-repeat
+  position: relative
 
-  &_headers_wrapper
+  &_black_bg
     background-color: #070716
-    padding-top: 59px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
     height: 501px
+    z-index: 1
 
-    .title
-      margin: 27px 0 0 0
+  .title
+    margin: 27px 0 0 0
 
-    .subtitle
-      margin: 0
-
-  &_content_wrapper
-    height: 396px
-    padding-bottom: 136px
-    text-align: center
-    background: url("../img/bg/mobile_bg.jpg") center center/cover no-repeat
-
-    .container
-      position: relative
+  .subtitle
+    margin: 0 0 54px 0
 
   &_text
     font-weight: 300
     font-size: 17px
     line-height: 24px
     color: #222222
-    padding-top: 211px
+    text-align: center
 
   &_img
+    position: relative
     display: block
-    position: absolute
-    bottom: 45px
-    left: 50%
-    transform: translateX(-50%)
+    margin: 0 auto
+    z-index: 2
