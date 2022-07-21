@@ -400,16 +400,21 @@ nav
   justify-content: space-between
   align-items: center
 
-  .social_links_container
+  &_social_links
     display: flex
     justify-content: space-between
     align-items: center
-    .social_links_wrapper
-      width: 35px
-      height: 35px
+    &_wrapper
+      width: 32px
+      height: 32px
       background-color: #070716
       border-radius: 100%
       margin-right: 6px
+      display: flex
+      justify-content: center
+      align-items: center
+    &_link
+      color: #ffffff
 
   &_divider
     width: 301px
