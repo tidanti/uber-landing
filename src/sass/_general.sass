@@ -393,7 +393,17 @@ nav
   justify-content: space-between
   align-items: center
 
+  & > div
+    width: 33%
+    &:nth-child(2)
+      display: flex
+      justify-content: center
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+
   &_social_links
+    width: 160px
     display: flex
     justify-content: space-between
     align-items: center
@@ -408,6 +418,9 @@ nav
       align-items: center
     &_link
       color: #ffffff
+
+  &_main_container
+    width: 400px
 
   &_divider
     width: 301px
@@ -451,6 +464,9 @@ nav
       font-size: 11px
       text-transform: uppercase
       color: $light-blue
+
+  .app_links_container
+    width: 296px
 
 .xs-visible
   display: none
