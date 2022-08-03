@@ -17,6 +17,9 @@
     &_item
       width: 100%
 
+  .car
+    padding-bottom: 0
+
 @media (max-width: 991px)
   .menu
     &_item
@@ -52,6 +55,10 @@
     &_text_wrapper
       max-width: 300px
       margin-top: 20px
+
+  .car
+    &_img
+      width: 100%
 
 @media (max-width: 767px)
   .menu
@@ -188,5 +195,22 @@
     line-height: 16px
 
   .mobile
+    padding-bottom: 12px
     &_item
       height: 254px
+      margin-bottom: 30px
+
+  .car
+    min-height: 393px
+    padding: 25px 0 31px 0
+    &_black_bg
+      height: 100%
+    .title, .subtitle
+      display: none
+    &_img
+      margin-top: 36px
+    &_text
+      color: #fff
+      position: relative
+      z-index: 2
+      margin-top: 23px
