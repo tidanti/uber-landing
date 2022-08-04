@@ -20,6 +20,46 @@
   .car
     padding-bottom: 0
 
+  .footer
+    padding: 24px 18px 30px 18px
+    flex-direction: column
+    & > div
+      width: 100%
+      &:nth-child(1)
+        display: flex
+        justify-content: center
+        order: 2
+      &:nth-child(2)
+        order: 1
+      &:nth-child(3)
+        justify-content: center
+        order: 3
+
+    &_divider
+      width: 255px
+      height: 6px
+      margin-bottom: 21px
+    &_main_nav
+      margin-bottom: 10px
+      justify-content: space-between
+      &_link
+        font-size: 14px
+    &_second_nav
+      margin: 0 auto 10px auto
+      width: 85%
+      flex-wrap: wrap
+      justify-content: space-between
+    &_lang_nav
+      margin-bottom: 17px
+
+    &_social_links
+      margin-bottom: 19px
+
+    .app_links_container
+      text-align: center
+      .footer_app_img
+        width: 260px
+
 @media (max-width: 991px)
   .menu
     &_item
