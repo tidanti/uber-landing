@@ -120,7 +120,7 @@
       border: none
       margin: 10px 0
     &_link
-      font-size: 20px
+      font-size: 19px
   .hamburger
     display: block
     position: absolute
@@ -193,6 +193,7 @@
       height: 22px
       font-size: 10px
       margin-top: 6px
+      +btn_no_hover
 
   .promo
     min-height: 400px
@@ -212,9 +213,16 @@
       width: 210px
       height: 50px
       margin-top: 72px
+      +btn_no_hover
 
   .menu
     width: 85%
+    &_item
+      width: 100%
+      text-align: center
+      padding: 5px 0
+    &_link
+      display: block
 
   .reasons
     padding: 22px 0 36px 0
@@ -239,6 +247,10 @@
     &_item
       height: 254px
       margin-bottom: 30px
+      &_plus
+        &:hover
+          &:before, &:after
+            background-color: $light_blue
 
   .car
     min-height: 393px
